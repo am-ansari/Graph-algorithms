@@ -8,7 +8,7 @@ class Node:
     def __init__(self, key):
         self.id = key
         self.connectedTo = OrderedDict()  
-        self.status = 'univisited'
+        self.status = 'unvisited'
         
 class Graph:
 
@@ -49,7 +49,7 @@ def dfs(G):
         
     for vertex in G:
         
-        if vertex.status == 'univisited':
+        if vertex.status == 'unvisited':
             visited.append(vertex) 
             vertex.status = 'visited'
             dfsVisit(G, vertex, visited)
